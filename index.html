@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<title>Test</title>
+</head>
+<body>
+	<style>
+		p{
+			color: #303F9F;
+		}
+	</style>
+	<div class="contenedor-formulario">
+		<div class="wrap">
+			<form action="" class="formulario" name="formulario_registro" method="get" onsubmit="return mostrartodo()">
+				<div>
+					<div class="input-group">
+						<input type="text" id="nombre" name="nombre">
+						<label class="label" for="nombre">Nombre:</label>
+					</div>
+					<div class="input-group">
+						<input type="email" id="correo" name="correo">
+						<label class="label" for="correo">Correo:</label>
+					</div>
+					<div class="input-group radio">
+						<p>Sexo</p>
+						<input type="radio" name="sexo" id="hombre" value="Hombre">
+						<label for="hombre">Hombre</label>
+						<input type="radio" name="sexo" id="mujer" value="Mujer">
+						<label for="mujer">Mujer</label>
+					</div>
+					<hr>
+					<div class="input-group radio">
+						<p>¿C++, Fortran, Cobol, Lisp son lenguajes de nivel?</p>
+						<input type="radio" name="leng" id="alto" value="Alto">
+						<label for="alto">alto</label>
+						<input type="radio" name="leng" id="bajo" value="Bajo">
+						<label for="bajo">bajo</label>
+						<input type="radio" name="leng" id="medio" value="Medio">
+						<label for="medio">Medio</label>
+						<div class="hidden" id="div1"></div>
+					</div>
+					<hr>
+					<div class="input-group radio">
+						<p>¿Originalmente desarrollado por Dennis Ritchie entre 1969 y 1972 en los laboratorios Bell?</p>
+						<input type="radio" name="desa" id="basic" value="Basic">
+						<label for="basic">Basic</label>
+						<input type="radio" name="desa" id="visualbasic" value="VisualBasic">
+						<label for="visualbasic">VisualBasic</label>
+						<input type="radio" name="desa" id="java" value="Java">
+						<label for="java">Java</label>
+						<input type="radio" name="desa" id="c" value="C">
+						<label for="c">C</label>
+						<div class="hidden" id="div2"></div>
+					</div>
+					<hr>
+					<div class="input-group radio">
+						<p>¿Diseñado a mediados de los años 80 por Bjarne Stroustrup</p>
+						<input type="radio" name="dise" id="c1" value="C">
+						<label for="c1">C</label>
+						<input type="radio" name="dise" id="basci" value="Basci">
+						<label for="basci">Basci</label>
+						<input type="radio" name="dise" id="c++" value="C++">
+						<label for="c++">C++</label>
+						<input type="radio" name="dise" id="java1" value="Java">
+						<label for="java1">Java</label>
+						<div class="hidden" id="div3"></div>
+					</div>
+					<hr>
+					<div class="input-group radio">
+						<p>¿Originalmente desarrollado por James Gosling de Sun MicroSystems ( La cual fue adquirida por la compañía Oracle), y publicado en 1995 como un componente fundamental de la plataforma Java de Sun Microsystems?</p>
+						<input type="radio" name="ori" id="java2" value="Java">
+						<label for="java2">Java</label>
+						<input type="radio" name="ori" id="c++1" value="C++">
+						<label for="c++1">C++</label>
+						<input type="radio" name="ori" id="basic1" value="Basic">
+						<label for="basic1">Basic</label>						
+						<input type="radio" name="ori" id="c2" value="C">
+						<label for="c2">C</label>
+						<div class="hidden" id="div4"></div>
+					</div>
+					<hr>
+					<div class="input-group radio">
+						<p>¿PHP es especialmente utilizado para?</p>
+						<input type="radio" name="uti" id="videojuegos" value="VideoJuegos">
+						<label for="videojuegos">VideoJuegos</label>
+						<input type="radio" name="uti" id="calculo" value="Calculo">
+						<label for="calculo">Calculo</label>
+						<input type="radio" name="uti" id="appweb" value="AppWeb">
+						<label for="appweb">Aplicaciones Web</label>
+						<div class="hidden" id="div5"></div>
+					</div>
+					<hr>					
+					<div class="input-group checkbox">
+						<input type="checkbox" name="terminos" id="terminos" value="true">
+						<label for="terminos">Acepto los Terminos y Condiciones</label>
+					</div>
+					<input type="submit" id="btn-submit" value="Enviar" />	
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/formulario.js"></script>
+</body>
+</html>
